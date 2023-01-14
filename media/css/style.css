@@ -514,7 +514,7 @@ button {
   width: 20rem;
   height: 22rem;
 
- /* background: linear-gradient(
+ background: linear-gradient(
     135deg,
     RGB(38, 49, 114) 12%,
     RGB(255, 191, 180) 80%
@@ -528,7 +528,7 @@ button {
     135deg,
     RGB(38, 49, 114) 12%,
     RGB(255, 191, 180) 80%
-  );*/
+  );
   border-radius: 0.6rem;
 }
 
