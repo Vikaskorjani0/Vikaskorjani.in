@@ -1,0 +1,338 @@
+/**********MEDIA QUERIES**********/
+
+@media (max-width: 1221px) {
+  :root {
+    --h1FontSize: 2rem;
+    --h2FontSize: 1.5rem;
+    --h3FontSize: 1.2rem;
+    --h4FontSize: 1rem;
+    --normalSize: 0.85rem;
+    --smallSize: 0.75rem;
+    --icon-size: 1.2rem;
+  }
+
+  .header li {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --h1FontSize: 1.7rem;
+    --h2FontSize: 1.3rem;
+    --h3FontSize: 1rem;
+    --h4FontSize: 0.8rem;
+    --normalSize: 0.75rem;
+    --smallSize: 0.7rem;
+    --icon-size: 1.1rem;
+  }
+
+  .social-home {
+    margin-left: 2rem;
+  }
+
+  #home,
+  #about,
+  #projects,
+  #contactMe {
+    width: 85%;
+  }
+
+  .header {
+    width: 95%;
+  }
+
+  .name {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+
+  .home-content {
+    margin-left: 3rem;
+  }
+
+  .homeBlob {
+    height: 20em;
+    width: 20em;
+  }
+
+  .about-img {
+    width: 15rem;
+    height: 16.5rem;
+  }
+
+  .about-main {
+    column-gap: 3rem;
+  }
+
+  .about-info {
+    font-size: 0.8rem;
+  }
+
+  .timeline-section {
+    width: 80%;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  .slide video {
+    width: 80%;
+    border-radius: 0.5rem;
+    height: 100%;
+  }
+
+  .slide-android {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  .contact-container {
+    column-gap: 1rem;
+    width: 100%;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-input:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .contactMe-content {
+    width: 50%;
+  }
+
+  .contact-social {
+    margin-right: 1rem;
+  }
+
+  .fixed-social-show {
+    right: 2em;
+  }
+
+  .back-to-top {
+    right: 2em;
+  }
+
+  .specs-intro .iconify {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --headHeight: 0rem;
+    --icon-size: 1rem;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .bottom-head,
+  .head-menu {
+    display: flex;
+  }
+
+  #home {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .social-home {
+    flex-direction: row;
+    width: 80%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-left: 0;
+    height: auto;
+    padding-top: 5rem;
+    margin: auto;
+  }
+
+  .homeBlob {
+    height: 15em;
+    width: 15em;
+  }
+
+  .section {
+    padding-top: 6rem;
+  }
+
+  .name {
+    display: block;
+  }
+
+  .about-info {
+    font-size: 0.7rem;
+  }
+
+  .about-img {
+    width: 12rem;
+    height: 13.2rem;
+  }
+
+  .skills-main {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2rem;
+    grid-column-gap: 5rem;
+  }
+
+  .timeline-items::before {
+    left: 7px;
+  }
+
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+
+  .timeline-dot {
+    left: 0;
+  }
+
+  .slide-android {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #certificates-page {
+    padding-top: 2rem;
+  }
+
+  #certificates-page h2 {
+    font-size: var(--h1FontSize);
+  }
+
+  .fixed-social-show {
+    right: 1.5em;
+  }
+
+  .back-to-top {
+    right: 1.5em;
+  }
+
+  .dot {
+    height: 11px;
+    width: 11px;
+  }
+
+  .specs-intro .iconify {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* :root {
+    --h1FontSize: 1.6rem;
+    --h2FontSize: 1.2rem;
+    --h3FontSize: 0.9rem;
+    --h4FontSize: 0.7rem;
+    --normalSize: 0.7rem;
+    --smallSize: 0.6rem;
+    --icon-size: 1rem;
+  } */
+
+  #home {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homeBlob {
+    width: 100%;
+    height: auto;
+  }
+
+  /* .about-main {
+    flex-direction: column-reverse;
+    column-gap: 0;
+    row-gap: 2rem;
+  } */
+
+  .about-info {
+    width: 90%;
+  }
+
+  .qualifications-menu,
+  .projects-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    grid-column: span 2;
+    width: 80%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .contactMe-content {
+    width: 90%;
+  }
+
+  .fixed-social-show {
+    right: 1em;
+  }
+
+  .back-to-top {
+    right: 1em;
+  }
+
+  .slide-info p {
+    display: none;
+  }
+
+  .slide-info span {
+    margin-top: 1.3rem;
+  }
+
+  .learn-more {
+    display: block;
+  }
+
+  .slide {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .slide-info p {
+    display: none;
+  }
+
+  .specs-intro .iconify {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media (max-width: 481px) {
+  .about-main {
+    flex-direction: column-reverse;
+  }
+
+  .about-info {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+}
